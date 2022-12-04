@@ -1,0 +1,26 @@
+### Get user
+
+POST http://localhost:3000/auth/login
+content-type:application/json
+
+{
+     "email":"shubhamvishwa321@gmail.com",
+    "password":"Shubh*Monk@32199"
+ }
+### Visit protected routes with JWT
+
+POST http://localhost:3000/profile
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNodWJoYW0iLCJlbWFpbCI6InBhbmNoYWxzaHViaGFtODI2QGdtYWlsLmNvbSIsImlhdCI6MTY3MDEzNDgyMiwiZXhwIjoxNjcwMTM4NDIyfQ.UK3PKkSp33VWD3b9aJ4OJewbHPBWFOYFUnJc3XW2Qr8
+### Create user
+POST http://localhost:3000/signin
+content-type:application/json
+
+{
+    "username":"Shubham",
+    "email":"shubhamvishwa321@gmail.com",
+    "password":"Shubh*Monk@32199"
+}
+
+### temp
+
+GET  http://localhost:3000/
